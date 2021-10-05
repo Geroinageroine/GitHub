@@ -1,0 +1,11 @@
+textfile = open("input.txt", encoding='utf8')
+filetext = textfile.read()
+textfile.close()
+list1=filetext.split()
+a=int(list1[0])
+b=int(list1[1])
+End=str(a+b)
+# Запись в файл
+f = open('output.txt', 'w')
+f.write(End)
+f.close()
